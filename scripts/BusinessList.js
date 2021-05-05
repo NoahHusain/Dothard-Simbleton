@@ -14,3 +14,20 @@ export const BusinessList = () => {
         }
     );
 }
+
+
+const companySearchResultArticle = document.querySelector(".foundCompanies")
+
+document
+    .querySelector("#companySearch")
+        .addEventListener(
+            "keypress",
+            keyPressEvent => {
+                if (keyPressEvent.charCode === 13) {
+                    const input = keyPressEvent.target.value.toLowerCase()
+
+                    const foundBusiness = businesses.find(business => business.companyName.toLowerCase().includes(input))/** implement .find() method here */
+
+                    companySearchResultArticle.innerHTML = Business(foundBusiness);
+                }
+        });
