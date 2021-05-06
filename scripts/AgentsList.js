@@ -9,7 +9,7 @@ export const agentList = () => {
 
     const agentList = businesses.map( business => {
         return {
-        name: `${business.purchasingAgent.nameFirst} ${business.purchasingAgent.nameLast} `,
+        fullName: `${business.purchasingAgent.nameFirst} ${business.purchasingAgent.nameLast} `,
         company: business.companyName,
         phone: business.phoneWork
         }

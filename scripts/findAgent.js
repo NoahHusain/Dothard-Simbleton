@@ -30,6 +30,6 @@ export const FindAgent = (agentsBusiness) => {
     return {
         fullName: `${agentsBusiness.purchasingAgent.nameFirst} ${agentsBusiness.purchasingAgent.nameLast}`,
         company: agentsBusiness.companyName,
-        phoneNumber: agentsBusiness.phoneWork
+        phone: agentsBusiness.phoneWork
     }
 }
